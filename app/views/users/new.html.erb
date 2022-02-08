@@ -1,6 +1,7 @@
 <h1>Please sign up for an account using your email and password.</h1>
+<p class='notice bg-danger'><%= notice %></p>
 <form class="sign-up">
-<%= form_for :user, url: '/users' do |f| %>
+<%= form_for :user, url: '/user', method: :post do |f| %>
 
   <div class="form-group">
     <%= f.label :first_name %>

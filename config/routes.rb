@@ -21,10 +21,10 @@ Rails.application.routes.draw do
   end
     
      # These routes are for sign up.
-  # For a form in the browse
+  # For a form in the browser
   # receive the form and create a user in our database using the data given  to us by the user
   get '/register' => 'users#new'
-  post '/users' => 'users#create'
+  post '/user' => 'users#create'
 
   # these routes are for showing users a login form, logging tem in, and loggin them out
   get '/login' => 'sessions#new'
